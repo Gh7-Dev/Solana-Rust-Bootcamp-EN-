@@ -24,7 +24,7 @@ pub fn add_fee(amount: &mut u64, fee: u64) {
 pub fn count_writable(flags: &[bool]) -> usize {
     let mut count: usize = 0;
     for flag in flags {
-        if *flag == true {
+        if *flag  {
             count += 1;
         }
     }
